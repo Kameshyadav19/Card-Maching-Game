@@ -1,0 +1,44 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .game-setup {
+    margin-bottom: 20px;
+  }
+  
+  .game-board {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .card {
+    width: 60px;
+    height: 80px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color: lightgray;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .card.face-up {
+    background-color: white;
+  }
+  
+  .card.matched {
+    background-color: lightgreen;
+    cursor: default;
+  }
+  
+  .card.disabled {
+    pointer-events: none;
+  }
